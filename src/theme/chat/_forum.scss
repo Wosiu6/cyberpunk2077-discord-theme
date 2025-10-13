@@ -21,6 +21,11 @@
 }
 
 #{c(forums matchingPostsRow)} {
+  border: 2px solid red;
+  border-top: none;
+}
+
+#{c(forums matchingPostsRow)} {
   background: cv('shading.input.bg');
   border: 2px solid cv('shading.input.border');
   border-top: 1px solid var(--border-subtle);
