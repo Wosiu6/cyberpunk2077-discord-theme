@@ -1,0 +1,14 @@
+// These get left in a nice, neat location.
+$version: '1.0.0';
+$themeName: 'Night City';
+$author: 'Wosiu6';
+$desc: 'Welcome to Night City';
+$desc_bd: 'for BetterDiscord.'; // BetterDiscord will use the default preset.
+$desc_vc: 'for Vencord.'; // Vencord will use the default preset.
+$desc_generic: 'for BetterDiscord and Vencord.'; // "Generic" to be used for preset distributables.
+$src: 'https://github.com/wosiu6/cyberpunk2077-discord-theme';
+$website: 'https://wosiu6.github.io/'; // also css @import host
+
+$main_import: 'main.css'; // Base import filename
+$bd_import: 'betterdiscord.css'; // BetterDiscord's import filename
+$vc_import: 'vencord.css'; // Vencord's import filename
