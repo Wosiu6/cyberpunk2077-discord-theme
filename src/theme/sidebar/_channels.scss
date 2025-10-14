@@ -24,6 +24,10 @@
   border: none;
 }
 
+#{c(sidebar server header header)} {
+  border-bottom-color: var(--neon-red-color);
+}
+
 // UNREAD PILL
 #{c(sidebar server channels unreadPill)} {
   box-shadow: 0 0 6px 1px cv('color.main');

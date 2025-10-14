@@ -15,6 +15,10 @@
   }
 }
 
+#{c(header header)} {
+    border-bottom-color: var(--neon-red-color);
+}
+
 #{c(header children)} {
     border-bottom-color: var(--main-color);
 }
