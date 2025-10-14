@@ -18,11 +18,11 @@
 }
 
 #{c(header header)} {
-  border-bottom-color: var(--main-color);
+  border-bottom: 1px solid var(--neon-red-color);
 }
 
 #{c(header children)} {
-  border-bottom-color: var(--main-color);
+  border-bottom: 1px solid var(--neon-red-color);
 }
 
 // NICKNAME
@@ -33,11 +33,11 @@
 // SEARCH
 #{c(header searchBar)} {
   background-color: cv('shading.input.bg');
-  border-bottom-color: cv('color.main');
+  border-bottom: 1px solid var(--neon-red-color);
   border-radius: var(--radius-none);
 
   &:focus-within {
-    border-bottom-color: cv('color.main');
+    border-bottom: 1px solid var(--neon-red-color);
   }
 }
 

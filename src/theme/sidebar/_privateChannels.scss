@@ -27,7 +27,7 @@
 }
 
 #{c(sidebar private searchBar)} {
-  border-bottom-color: var(--neon-red-color) !important;
+  border-bottom: 1px solid var(--neon-red-color);
 }
 
 #{c(sidebar private searchBar)} button {

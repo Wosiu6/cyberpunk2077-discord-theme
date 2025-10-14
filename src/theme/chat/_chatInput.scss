@@ -9,10 +9,10 @@
 #{c(chatForm channelTextArea)} {
   background-color: cv('shading.input.bg');
   border-color: transparent;
-  border-bottom-color: var(--neon-red-color);
+  border-bottom: 1px solid var(--neon-red-color);
 
   &:is(:focus, :focus-within, :hover) {
-    border-bottom-color: var(--neon-red-color);
+    border-bottom: 1px solid var(--neon-red-color);
   }
 }
 
