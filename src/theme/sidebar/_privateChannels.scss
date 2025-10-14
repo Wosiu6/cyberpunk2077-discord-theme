@@ -39,7 +39,6 @@
 // CHANNEL CONTENT
 #{c(sidebar private interactive)} {
   transition: all 0.15s ease-in-out;
-  border-radius: 4px;
   &::before {
     content: '';
     position: absolute;
@@ -49,7 +48,6 @@
     left: 0;
     transition: all 0.15s ease-in-out;
     z-index: -1;
-    border-radius: 4px;
   }
   // HOVER
   &:hover {

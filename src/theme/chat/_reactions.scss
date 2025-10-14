@@ -1,7 +1,6 @@
 @use 'backend' as *;
 
 #{c(chat reactions reactions)} {
-  border-radius: 4px;
   #{c(chat reactions me)} {
     background: hsl(from cv('color.main') h s l/.15);
     border-color: cv('color.main');
@@ -31,5 +30,4 @@
 
 // SUPER REACTIONS
 #{c(chat reactions burst glow)} {
-  border-radius: 4px;
 }

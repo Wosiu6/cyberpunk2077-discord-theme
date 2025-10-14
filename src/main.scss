@@ -38,6 +38,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   // DO NOT EDIT THESE -- VARIABLES ARE NOT TO BE DISTRIBUTED TO END USER.
   // generic colors
   --hsl-main-color: hsl(from var(--main-color) #{$calc});
+  --hsl-main-color-light: hsl(from var(--main-color-light) #{$calc});
   --hsl-hover-color: hsl(from var(--hover-color) #{$calc});
   --hsl-success-color: hsl(from var(--success-color) #{$calc});
   --hsl-warning-color: hsl(from var(--warning-color) #{$calc});
@@ -80,6 +81,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   // THESE VARIABLES ARE EDITED BY ME
 
   --main-color: #c5003c;
+  --main-color-light: #ff4c6d;
   --hover-color: #880425;
   --success-color: #55ead4;
   --danger-color: #b000ff;

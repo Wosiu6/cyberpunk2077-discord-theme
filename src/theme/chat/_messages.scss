@@ -108,7 +108,6 @@
 #{c(chat mentionWrapper)} {
   background-color: cv('color.main');
   color: cv('text.normal');
-  border-radius: 5px;
   padding: 0 4px;
 
   &:hover {
@@ -149,7 +148,6 @@
 // EMBEDS
 #{c(embeds embedGrid)} {
   background-color: var(--dark-primary-color);
-  border-radius: 5%;
 }
 
 // EMBED DOWNLOAD BUTTON

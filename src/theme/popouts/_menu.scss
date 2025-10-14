@@ -3,7 +3,6 @@
 #{c(popouts menus menu)} {
   background: cv('shading.popout');
   border: none;
-  border-radius: 5px;
 }
 #{c(popouts menus colorDefault)} {
   &#{c(popouts menus itemFocused)} {

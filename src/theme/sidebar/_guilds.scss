@@ -43,7 +43,10 @@
 #{c(guildList iconWrapper)} {
   &:hover {
     #{c(guildList homeWrapper)} {
-      background-color: cv('color.hover');
+      box-shadow: inset 0px 0px 0px 1px var(--neon-yellow-color);
+      color: var(--neon-yellow-color);
+      border-radius: 0;
+      border-bottom-right-radius: 10px;
     }
   }
   &#{c(guildList selected)} {
@@ -78,7 +81,6 @@
 // NEW MENTION
 #{c(guildList mention mention)} {
   background: cv('color.main');
-  border-radius: 5px;
   &:active {
     background: cv('color.main');
   }

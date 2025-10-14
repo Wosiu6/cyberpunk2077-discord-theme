@@ -2,7 +2,6 @@
 
 #{c(profile outer)}:not(#{c(profile customTheme)}) #{c(role role)} {
   //to not hit custom themes
-  border-radius: 4px;
   position: relative;
   #{c(role removeButton)} {
     position: static;
@@ -20,7 +19,6 @@
       position: absolute;
       background: inherit;
       opacity: 0.2;
-      border-radius: 4px;
     }
   }
 }

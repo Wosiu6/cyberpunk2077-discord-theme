@@ -1,7 +1,6 @@
 @use 'backend' as *;
 
 #{c(button button)} {
-  border-radius: 4px;
 }
 
 // BUTTON FILLED
@@ -100,7 +99,6 @@
 
 // NEW BUTTON CLASSES
 #{c(button new button)} {
-  border-radius: 4px;
 }
 #{c(button new primary)} {
   background: cv('color.main');

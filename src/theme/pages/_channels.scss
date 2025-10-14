@@ -27,7 +27,6 @@
   background: cv('shading.card');
   border: 2px solid transparent;
   margin-bottom: 8px;
-  border-radius: 8px;
   &:hover {
     &:not(#{c(channelsPage browse channelDisabled)}) {
       background: cv('shading.card');
@@ -73,7 +72,6 @@
     position: absolute;
     background: inherit;
     opacity: 0.2;
-    border-radius: 4px;
   }
 }
 #{c(channelsPage customise emptyPage)} {

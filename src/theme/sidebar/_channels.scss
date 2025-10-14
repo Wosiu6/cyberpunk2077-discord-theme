@@ -62,7 +62,6 @@
     left: 0;
     transition: all 0.15s ease-in-out;
     z-index: -1;
-    border-radius: 4px;
   }
 }
 
@@ -76,7 +75,7 @@
 
 #{c(sidebar server channels name)} {
   transition: all 0.15s ease-in-out;
-  color: var(--hsl-channel-normal);
+  color: var(--hsl-main-color-light);
 }
 
 #{c(sidebar server channels wrapper)} {
@@ -96,6 +95,10 @@
   &#{c(sidebar server channels muted)}:hover {
     #{c(sidebar server channels link)} {
       background: cv('shading.hover');
+      box-shadow: inset 0px 0px 0px 1px var(--neon-yellow-color);
+      color: var(--neon-yellow-color);
+      border-radius: 0;
+      border-bottom-right-radius: 10px;
     }
 
     #{c(sidebar server channels name)},
@@ -179,7 +182,6 @@
   z-index: 1;
 
   #{c(sidebar server channels voice userContent)} {
-    border-radius: 3px;
     transition: all 0.15s ease-in-out;
   }
 

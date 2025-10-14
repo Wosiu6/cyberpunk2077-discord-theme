@@ -1,22 +1,27 @@
 @use 'backend' as *;
 
 // CHAT INPUT
-#{c(chatForm form)} {
-  margin-top: 4px;
+#{c(chatForm channelTextAreaMainChat)} {
+  border-radius: 0;
+  border-bottom: 1px solid var(--neon-red-color);
 }
+
 #{c(chatForm channelTextArea)} {
   background-color: cv('shading.input.bg');
   box-shadow: 0 0 0 2px cv('shading.input.border');
   border-color: transparent;
+
   &:focus-within {
     border-color: transparent;
     box-shadow: 0 0 2px 2px var(--hsl-main-color);
   }
 }
+
 #{c(chatForm stackedBars)},
 #{c(chatForm attachmentArea)} {
   background: transparent;
 }
+
 #{c(chatForm upload)} {
   background: cv('shading.card');
   border: none;
@@ -46,6 +51,7 @@
 #{c(chatForm sendButtonActiveChild)} {
   color: var(--interactive-normal);
 }
+
 :is(#{c(main themeLight)}, #{c(main themeDark)}) {
   #{c(chatForm sendButton)} {
     &:is(:focus, :focus-within, :hover) {
@@ -60,6 +66,7 @@
 #{c(chatForm toolbar)} {
   background-color: cv('shading.popout');
   box-shadow: none;
+
   &::before {
     border-top-color: cv('shading.popout');
   }

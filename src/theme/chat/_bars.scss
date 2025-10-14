@@ -5,7 +5,6 @@
   top: 4px;
   right: 8px;
   background: hsl(from cv('color.main') h s l/.9);
-  border-radius: 4px;
   transition: all 0.1s ease-in-out;
   &:active {
     padding-top: 0;
@@ -17,7 +16,6 @@
 #{c(chat bar jumpToPresent)} {
   background: cv('shading.popout');
   border: none;
-  border-radius: 5px;
 }
 
 // FAILED TO LOAD MESSAGES
@@ -25,7 +23,6 @@
 #{c(chat bar messagesError)} {
   background: cv('color.danger');
   border: none;
-  border-radius: 5px;
 }
 
 // FOLLOW CHANNEL

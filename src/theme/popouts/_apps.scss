@@ -18,7 +18,6 @@
   &,
   &:first-child,
   &:last-child {
-    border-radius: 8px;
   }
 }
 #{c(popouts apps rowDivider)} {
@@ -46,7 +45,6 @@
     }
   }
   :is(#{c(popouts apps details command)}, #{c(popouts apps details command)}:first-child, #{c(popouts apps details command)}:last-child) {
-    border-radius: 8px;
   }
 }
 #{c(popouts apps details command)} {
@@ -75,7 +73,6 @@
   &,
   &:first-child,
   &:last-child {
-    border-radius: 8px;
   }
 }
 #{c(popouts apps search itemDivider)} {
