@@ -10,11 +10,6 @@
   background-color: cv('shading.input.bg');
   box-shadow: 0 0 0 2px cv('shading.input.border');
   border-color: transparent;
-
-  &:focus-within {
-    border-color: transparent;
-    box-shadow: 0 0 2px 2px var(--hsl-main-color);
-  }
 }
 
 #{c(chatForm stackedBars)},
