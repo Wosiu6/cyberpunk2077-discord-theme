@@ -5,10 +5,12 @@
   #{c(header themed)} {
     background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.5));
   }
+
   #{c(header dot)} {
     display: none;
   }
 }
+
 #{c(header children)} {
   &::after {
     display: none;
@@ -16,11 +18,11 @@
 }
 
 #{c(header header)} {
-    border-bottom-color: var(--neon-red-color);
+  border-bottom-color: var(--neon-red-color);
 }
 
 #{c(header children)} {
-    border-bottom-color: var(--main-color);
+  border-bottom-color: var(--main-color);
 }
 
 // NICKNAME
@@ -31,19 +33,24 @@
 // SEARCH
 #{c(header searchBar)} {
   background-color: cv('shading.input.bg');
+  border-bottom-color: cv('color.main');
   border-radius: var(--radius-none);
+
   &:focus-within {
     border-bottom-color: cv('color.main');
   }
 }
+
 #{c(header searchFilter)},
 #{c(header searchAnswer)} {
   background: cv('color.main');
 }
+
 #{c(header searchFilter)} {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
+
 #{c(header searchAnswer)} {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
