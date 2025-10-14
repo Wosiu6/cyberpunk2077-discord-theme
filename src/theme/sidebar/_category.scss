@@ -1,12 +1,12 @@
 @use 'backend' as *;
 
 /* CATEGORY */
-#{c(sidebar server category mainContent)} {
-  
+#{c(sidebar server category iconVisibility)} {
+    padding-left: var(--space-sm);
 }
 
-#{c(sidebar server category container)} {
-
+#{c(sidebar server category name)} {
+    font-size: 16px;
 }
 
 #{c(sidebar server category children)} {
