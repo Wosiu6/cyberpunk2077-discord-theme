@@ -21,7 +21,7 @@
 #{c(input container)} {
   border: 0;
   border-bottom: 1px solid var(--neon-red-color);
-
+  outline: none;
   &:focus-within {
     border: 0;
     border-bottom: 1px solid var(--neon-red-color);
