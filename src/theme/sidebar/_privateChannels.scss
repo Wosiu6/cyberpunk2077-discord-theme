@@ -26,6 +26,16 @@
   align-items: left;
 }
 
+#{c(sidebar private searchBar)} {
+  border-bottom-color: var(--neon-red-color);
+}
+
+#{c(sidebar private searchBar)} button {
+  border-bottom: 1px solid var(--neon-blue-color);
+  background: var(--darker-primary-color);
+  border-radius: 0;
+}
+
 #{c(sidebar private startActivityIcon)},
 #{c(sidebar private inviteButtonIcon)} {
   color: cv('color.main');

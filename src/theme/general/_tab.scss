@@ -20,7 +20,7 @@
   #{c(tab themed)} {
     &#{c(tab item)} {
       &:hover:not(#{c(tab disabled)}) {
-        box-shadow: inset 0px 0px 0px 1px var(--neon-blue-color);
+        box-shadow: inset 0px 0px 0px 1px var(--neon-yellow-color);
         color: var(--neon-yellow-color);
         border-radius: 0;
         border-bottom-right-radius: 10px;
