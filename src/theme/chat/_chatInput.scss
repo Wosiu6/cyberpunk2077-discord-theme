@@ -10,6 +10,10 @@
   background-color: cv('shading.input.bg');
   border-color: transparent;
   border-bottom-color: var(--neon-red-color);
+
+  &:is(:focus, :focus-within, :hover) {
+    border-bottom-color: var(--neon-red-color);
+  }
 }
 
 #{c(chatForm stackedBars)},
