@@ -21,4 +21,14 @@
 #{c(input container)} {
   border: 0;
   border-bottom: 1px solid var(--neon-red-color);
+
+  &:focus-within {
+    border: 0;
+    border-bottom: 1px solid var(--neon-red-color);
+  }
+}
+
+#{c(input container)}:is(:focus-within, :hover) {
+  border: 0;
+  border-bottom: 1px solid var(--neon-red-color);
 }
