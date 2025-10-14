@@ -46,8 +46,7 @@
     #{c(guildList homeWrapper)} {
       box-shadow: inset 0px 0px 0px 1px var(--neon-yellow-color);
       color: var(--neon-yellow-color);
-      border-radius: 0;
-      border-bottom-right-radius: 10px;
+      border-radius: 10px;
     }
   }
   &#{c(guildList selected)} {

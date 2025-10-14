@@ -4,8 +4,10 @@
 #{c(chat bar newMessages)} {
   top: 4px;
   right: 8px;
-  background: hsl(from cv('color.main') h s l/.9);
   transition: all 0.1s ease-in-out;
+  border-radius: var(--radius-none);
+  background-color: var(--main-color-dark);
+
   &:active {
     padding-top: 0;
     scale: 0.99;
