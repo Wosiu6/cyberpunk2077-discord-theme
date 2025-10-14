@@ -66,10 +66,10 @@
 
 // ADD FRIEND SEARCHBAR
 #{c(friends addFriendInputWrapper)} {
-    border-bottom: var(--main-color);
+  border-bottom: 1px solid var(--neon-red-color);
     border-radius: var(--radius-none);
   &:focus-within {
-    border-bottom: var(--main-color);
+  border-bottom: 1px solid var(--neon-red-color);
     border-radius: var(--radius-none);
   }
 }

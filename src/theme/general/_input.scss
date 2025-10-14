@@ -2,12 +2,14 @@
 
 #{c(input wrapper)} {
   background: cv('shading.input.bg');
+  border-bottom: 1px solid var(--neon-red-color);
   border-color: cv('shading.input.border');
   border-radius: var(--radius-none);
-  &:not([data-read-only=true]):has(input:focus,textarea:focus) {
+
+  &:not([data-read-only=true]):has(input:focus, textarea:focus) {
     border-color: cv('color.main');
-    border-bottom: var(--main-color);
-  border-radius: var(--radius-none);
+  border-bottom: 1px solid var(--neon-red-color);
+    border-radius: var(--radius-none);
   }
 }
 
