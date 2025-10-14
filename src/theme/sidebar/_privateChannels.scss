@@ -4,6 +4,8 @@
   background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.2));
 }
 
+#{c(sidebar private channelContainer)} {}
+
 #{c(sidebar private scroller)} {
   background: transparent;
   margin-bottom: var(--custom-app-panels-height, 0);
@@ -24,6 +26,10 @@
   font-size: 14px;
   font-weight: 600;
   align-items: left;
+
+  &:hover {
+    color: var(--neon-blue-color);
+  }
 }
 
 #{c(sidebar private searchBar)} {
@@ -88,6 +94,7 @@
       color: var(--neon-yellow-color);
       border-radius: 0;
       border-bottom-right-radius: 10px;
+      z-index: 1;
     }
 
     #{c(sidebar private activityText)} {
