@@ -7,8 +7,10 @@
     --selected-tab-item-color: var(--hsl-hover-color);
 
     &#{c(tab selected)} {
-      --selected-tab-item-color: var(--hsl-main-color);
-      color: var(--interactive-active);
+      box-shadow: inset 0px 0px 0px 1px var(--neon-blue-color);
+      color: var(--neon-blue-color);
+      border-radius: 0;
+      border-bottom-right-radius: 10px;
     }
   }
 }
@@ -18,11 +20,17 @@
   #{c(tab themed)} {
     &#{c(tab item)} {
       &:hover:not(#{c(tab disabled)}) {
-        background-color: cv('shading.hover');
+        box-shadow: inset 0px 0px 0px 1px var(--neon-blue-color);
+        color: var(--neon-yellow-color);
+        border-radius: 0;
+        border-bottom-right-radius: 10px;
       }
 
       &#{c(tab selected)} {
-        background-color: cv('color.main');
+        box-shadow: inset 0px 0px 0px 1px var(--neon-blue-color);
+        color: var(--neon-blue-color);
+        border-radius: 0;
+        border-bottom-right-radius: 10px;
 
         &:hover:not(#{c(tab disabled)}) {
           background-color: cv('color.main');

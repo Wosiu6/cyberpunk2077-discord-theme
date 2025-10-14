@@ -3,6 +3,7 @@
 #{c(sidebar private channels)} {
   background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.2));
 }
+
 #{c(sidebar private scroller)} {
   background: transparent;
   margin-bottom: var(--custom-app-panels-height, 0);
@@ -10,11 +11,13 @@
 
 // HEADER
 #{c(sidebar private headerContainer)} {
+
   &,
   &:not(#{c(sidebar private tall)}):hover {
     color: cv('color.main');
   }
 }
+
 #{c(sidebar private headerText)} {
   display: flex;
   text-transform: uppercase;
@@ -22,9 +25,11 @@
   font-weight: 600;
   align-items: left;
 }
+
 #{c(sidebar private startActivityIcon)},
 #{c(sidebar private inviteButtonIcon)} {
   color: cv('color.main');
+
   &:hover {
     color: cv('color.hover');
   }
@@ -39,6 +44,7 @@
 // CHANNEL CONTENT
 #{c(sidebar private interactive)} {
   transition: all 0.15s ease-in-out;
+
   &::before {
     content: '';
     position: absolute;
@@ -49,21 +55,34 @@
     transition: all 0.15s ease-in-out;
     z-index: -1;
   }
+
   // HOVER
   &:hover {
     background: cv('shading.hover');
+    box-shadow: inset 0px 0px 0px 1px var(--neon-yellow-color);
+    color: var(--neon-yellow-color);
+    border-radius: 0;
+    border-bottom-right-radius: 10px;
   }
+
   // SELECTED
   &#{c(sidebar private selected)} {
     background-color: transparent;
     color: var(--interactive-active);
+
     &::before {
       right: 0;
-      background: cv('color.main');
       animation: cv-channel-select 0.3s ease-in-out;
+
+      box-shadow: inset 0px 0px 0px 1px var(--neon-blue-color);
+      color: var(--neon-yellow-color);
+      border-radius: 0;
+      border-bottom-right-radius: 10px;
     }
+
     #{c(sidebar private activityText)} {
       color: var(--interactive-active);
+
       strong {
         color: var(--interactive-active);
       }
