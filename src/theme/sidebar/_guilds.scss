@@ -51,7 +51,7 @@
   }
   &#{c(guildList selected)} {
     #{c(guildList homeWrapper)} {
-      // nothing for now
+      background-color: currentColor;
     }
   }
 }
