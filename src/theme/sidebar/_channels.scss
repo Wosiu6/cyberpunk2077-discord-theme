@@ -103,7 +103,7 @@
 
     #{c(sidebar server channels name)},
     #{c(sidebar server channels icon)} {
-      color: var(--hsl-channel-hover);
+      color: var(--neon-yellow-color);
     }
   }
 
@@ -129,11 +129,15 @@
   // SELECTED
   &#{c(sidebar server channels selected)} {
     #{c(sidebar server channels link)} {
-      background-color: transparent;
+      background: cv('shading.hover');
+      box-shadow: inset 0px 0px 0px 1px var(--neon-yellow-color);
+      color: var(--neon-yellow-color);
+      border-radius: 0;
+      border-bottom-right-radius: 10px;
 
       &::before {
+        color: var(--neon-yellow-color);
         right: 0;
-        background: var(--hsl-channel-selected-bg);
         animation: cv-channel-select 0.3s ease-in-out;
       }
     }
