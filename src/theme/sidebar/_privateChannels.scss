@@ -33,7 +33,7 @@
 #{c(sidebar private searchBar)} button {
   border-bottom: 1px solid var(--neon-blue-color) !important;
   background: var(--darker-primary-color) !important;
-  border-radius: 0;
+  border-radius: var(--radius-md);
 }
 
 #{c(sidebar private startActivityIcon)},
