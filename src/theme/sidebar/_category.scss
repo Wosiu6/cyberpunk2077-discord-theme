@@ -2,11 +2,11 @@
 
 /* CATEGORY */
 #{c(sidebar server category iconVisibility)} {
-    padding-left: var(--space-sm);
+  padding-left: var(--space-sm);
 }
 
 #{c(sidebar server category name)} {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 #{c(sidebar server category children)} {
@@ -51,7 +51,7 @@
   &:is(&, #{c(sidebar server category muted)}) {
     &:hover {
       #{c(sidebar server category name)} {
-        color: cv('color.hover');
+        color: var(--neon-blue-color);
 
         &::before {
           background: linear-gradient(to left, cv('color.hover') 50%, transparent);
