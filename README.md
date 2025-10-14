@@ -11,7 +11,7 @@ If you have any requests or note,s please do open an Issue or reach out to me.
 ## Screenshots
 <img width="2553" height="1389" alt="image" src="https://github.com/user-attachments/assets/b8516577-2b2d-402f-94e6-fdca47916cf4" />
 <img width="2523" height="1384" alt="image" src="https://github.com/user-attachments/assets/ebc32306-c025-4508-adbc-45f7c347e07e" />
-<img width="2554" height="1379" alt="image" src="https://github.com/user-attachments/assets/d3a7c34b-3972-4615-881a-f1c0ac2480ba" />
+<img width="2559" height="1388" alt="image" src="https://github.com/user-attachments/assets/905d060a-b743-4874-a614-fc2106a03772" />
 
 ## Installing
 Note: Cyberpunk Theme only supports some plugins. If it is used by me, I probably will make adjustments to accommodate, but feel free to convince me to support more.
