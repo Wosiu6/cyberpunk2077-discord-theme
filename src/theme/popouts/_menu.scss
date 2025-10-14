@@ -80,19 +80,19 @@
 
 #{c(popouts menus itemFocused)} {
   &#set-status-submenu-online {
-    background-color: cv('color.online');
+    background-color: transparent;
   }
 
   &#set-status-submenu-idle {
-    background-color: cv('color.idle');
+    background-color: transparent;
   }
 
   &#set-status-submenu-dnd {
-    background-color: cv('color.dnd');
+    background-color: transparent;
   }
 
   &#set-status-submenu-invisible {
-    background-color: cv('color.offline');
+    background-color: transparent;
   }
 }
 

@@ -106,12 +106,14 @@
 
 // MENTION
 #{c(chat mentionWrapper)} {
-  background-color: cv('color.main');
   color: cv('text.normal');
   padding: 0 4px;
+  background-color: var(--main-color-dark);
+  border-radius: var(--radius-none);
 
   &:hover {
-    background-color: cv('color.hover');
+    color: var(--neon-blue-color);
+    cursor: default;
   }
 }
 
