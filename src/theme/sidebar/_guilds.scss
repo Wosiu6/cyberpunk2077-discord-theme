@@ -52,6 +52,9 @@
   &#{c(guildList selected)} {
     #{c(guildList homeWrapper)} {
       background-color: transparent;
+      box-shadow: inset 0px 0px 0px 1px var(--neon-yellow-color);
+      color: var(--neon-yellow-color);
+      border-radius: 10px;
     }
   }
 }
