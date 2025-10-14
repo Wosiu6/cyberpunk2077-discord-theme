@@ -2,8 +2,6 @@
 
 #{c(input wrapper)} {
   background: cv('shading.input.bg');
-  border: 0;
-  border-bottom: 1px solid var(--neon-red-color);
   border-color: cv('shading.input.border');
   border-radius: var(--radius-none);
 
@@ -18,4 +16,9 @@
   &::placeholder {
     color: cv('text.muted');
   }
+}
+
+#{c(input container)} {
+  border: 0;
+  border-bottom: 1px solid var(--neon-red-color);
 }

@@ -18,11 +18,7 @@
 }
 
 #{c(header header)} {
-  border-bottom: 1px solid var(--neon-red-color);
-}
-
-#{c(header children)} {
-  border-bottom: 1px solid var(--neon-red-color);
+  border-bottom: 1px solid var(--neon-red-color) !important;
 }
 
 // NICKNAME
