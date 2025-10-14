@@ -2,20 +2,11 @@
 
 /* CATEGORY */
 #{c(sidebar server category mainContent)} {
-  position: relative;
-  box-sizing: border-box;
-  height: 34px;
-  padding-right: 8px;
-  padding-left: 16px;
-  box-shadow: inset 0px 0px 0px 1px var(--light-neon-red-color);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  cursor: default;
-  border-bottom-right-radius: 10px;
-  font-weight: bold !important;
-  margin-bottom: 15px;
-  background: var(--dark-primary-color);
+  
+}
+
+#{c(sidebar server category container)} {
+
 }
 
 #{c(sidebar server category children)} {

@@ -9,6 +9,7 @@
 #{c(chatForm channelTextArea)} {
   background-color: cv('shading.input.bg');
   border-color: transparent;
+  border-bottom-color: var(--neon-red-color);
 }
 
 #{c(chatForm stackedBars)},
