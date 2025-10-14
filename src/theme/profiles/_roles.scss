@@ -39,3 +39,7 @@
   background: cv('shading.popout');
   border: none;
 }
+
+#{c(role role)} {
+  border-radius: var(--radius-none);
+}
