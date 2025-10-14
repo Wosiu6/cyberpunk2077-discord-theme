@@ -3,9 +3,11 @@
 #{c(input wrapper)} {
   background: cv('shading.input.bg');
   border-color: cv('shading.input.border');
+  border-radius: var(--radius-none);
   &:not([data-read-only=true]):has(input:focus,textarea:focus) {
     border-color: cv('color.main');
-    box-shadow: 0 0 2px 0 cv('color.main');
+    border-bottom: var(--main-color);
+  border-radius: var(--radius-none);
   }
 }
 

@@ -61,20 +61,16 @@
     &:hover {
       background-color: cv('shading.hover');
     }
-    &[aria-selected='true'] {
-      background-color: cv('color.main');
-      color: cv('text.primary');
-    }
   }
 }
 
 // ADD FRIEND SEARCHBAR
 #{c(friends addFriendInputWrapper)} {
-  background: cv('shading.input.bg');
-  border: 2px solid cv('shading.input.border');
+    border-bottom: var(--main-color);
+    border-radius: var(--radius-none);
   &:focus-within {
-    border-color: cv('color.main');
-    box-shadow: 0 0 2px 0 cv('color.main');
+    border-bottom: var(--main-color);
+    border-radius: var(--radius-none);
   }
 }
 #{c(friends addFriendInput)} {
