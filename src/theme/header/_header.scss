@@ -15,6 +15,10 @@
   }
 }
 
+#{c(header children)} {
+    border-bottom-color: var(--main-color);
+}
+
 // NICKNAME
 #{c(header akaBadge)} {
   background: cv('color.main');

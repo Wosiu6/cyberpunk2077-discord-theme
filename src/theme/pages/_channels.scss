@@ -8,10 +8,6 @@
   }
 }
 
- #{c(channelsPage header headerTitle)} {
-    border-bottom-color: var(--main-color);
- }
-
 // BACKGROUND
 #{c(channelsPage container)} {
   background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4)) !important;
