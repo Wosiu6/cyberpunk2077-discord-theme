@@ -1,0 +1,8 @@
+@use 'backend' as *;
+
+// SIDEBAR
+#{c(groupDm searchBar)} {
+  border-radius: var(--radius-none);
+  border-bottom: 1px solid var(--neon-red-color);
+}
+

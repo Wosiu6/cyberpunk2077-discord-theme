@@ -1,0 +1,33 @@
+@use 'backend' as *;
+
+#{c(modals quickswitcher scroller)} {
+  background: transparent;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent !important;
+  }
+}
+
+#{c(modals quickswitcher search)} {
+  border: 0;
+  border-radius: var(--radius-none);
+  border-bottom: 1px solid var(--neon-red-color);
+
+  &:focus-within {
+    border: 0;
+    border-bottom: 1px solid var(--neon-red-color);
+  }
+}
+
+#{c(modals quickswitcher result)} {
+  &[aria-selected=true] {
+    box-shadow: inset 0px 0px 0px 1px var(--neon-yellow-color);
+    color: var(--neon-yellow-color);
+    border-radius: 0;
+    border-bottom-right-radius: 10px;
+  }
+}

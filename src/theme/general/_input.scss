@@ -1,0 +1,36 @@
+@use 'backend' as *;
+
+#{c(input wrapper)} {
+  background: cv('shading.input.bg');
+  border-color: cv('shading.input.border');
+  border-radius: var(--radius-none);
+
+  &:not([data-read-only=true]):has(input:focus, textarea:focus) {
+    border-color: cv('color.main');
+    border-bottom: 1px solid var(--neon-red-color);
+    border-radius: var(--radius-none);
+  }
+}
+
+#{c(input input)} {
+  &::placeholder {
+    color: cv('text.muted');
+  }
+}
+
+#{c(input container)} {
+  border: 0;
+  border-bottom: 1px solid var(--neon-red-color);
+  outline: none;
+  &:focus-within {
+    border: 0;
+    border-bottom: 1px solid var(--neon-red-color);
+  }
+}
+
+#{c(input container)} {
+  &:is(:focus-within, :hover, :focus) {
+    border: 0;
+    border-bottom: 1px solid var(--neon-red-color);
+  }
+}

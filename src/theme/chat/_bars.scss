@@ -1,0 +1,34 @@
+@use 'backend' as *;
+
+// NEW MESSAGES
+#{c(chat bar newMessages)} {
+  top: 4px;
+  right: 8px;
+  transition: all 0.1s ease-in-out;
+  border-radius: var(--radius-none);
+  background-color: var(--main-color-dark);
+
+  &:active {
+    padding-top: 0;
+    scale: 0.99;
+  }
+}
+
+// JUMP TO PRESENT
+#{c(chat bar jumpToPresent)} {
+  background: cv('shading.popout');
+  border: none;
+}
+
+// FAILED TO LOAD MESSAGES
+// unsure
+#{c(chat bar messagesError)} {
+  background: cv('color.danger');
+  border: none;
+}
+
+// FOLLOW CHANNEL
+#{c(chat followWrapper)} {
+  background: cv('shading.popout');
+  border: none;
+}

@@ -1,0 +1,8 @@
+@use 'backend' as *;
+
+#{c(checkbox checkbox)} {
+  &#{c(checkbox checked)} {
+    border-color: cv('color.main');
+    background-color: transparent;
+  }
+}

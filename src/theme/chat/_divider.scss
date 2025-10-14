@@ -1,0 +1,47 @@
+@use 'backend' as *;
+
+#{c(chat divider divider)} {
+  
+
+  // ALLOWS NO BACKGROUND WITH DATE
+  &#{c(chat divider hasContent)} & {
+
+    &::before,
+    &::after {
+      border-color: var(--divider-color);
+    }
+  }
+}
+
+#{c(chat divider content)} {
+  display: flex;
+  flex: 1;
+  background: transparent;
+  align-items: center;
+  font-weight: 600;
+  color: var(--neon-yellow-color);
+
+  &::before,
+  &::after {
+    content: '';
+    height: 1px;
+    flex-grow: 1;
+    background: cv('shading.hover');
+  }
+
+  &::before {
+    margin-right: 10px;
+  }
+
+  &::after {
+    margin-left: 10px;
+  }
+
+  #{c(chat divider isUnread)} & {
+
+    &::before,
+    &::after {
+      background: var(--divider-color);
+    }
+  }
+}

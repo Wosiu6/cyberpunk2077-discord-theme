@@ -1,0 +1,110 @@
+@use 'backend' as *;
+// friends list
+#{c(friends tabBody)} {
+  background: none;
+}
+#{c(friends container)} {
+  background: none;
+  border: none;
+}
+#{c(friends peopleColumn)} {
+  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
+}
+
+#{c(friends peopleListItemText)} {
+  color: var(--text-primary)
+}
+
+// Looking for accounts you’ve blocked or ignored?
+#{c(friends blockedIgnoredSettingsNotice)} {
+  @include card;
+}
+
+// BUTTONS
+#{c(friends actionButton)} {
+  background-color: cv('shading.card');
+  &#{c(friends highlight)} {
+    background-color: cv('shading.card');
+    color: var(--interactive-active);
+  }
+  &:hover {
+    background: cv('color.hover');
+  }
+  &#{c(friends actionButtonAccept)} {
+    color: cv('color.success');
+    &:hover {
+      background: cv('color.success');
+      color: var(--interactive-active);
+    }
+  }
+  &#{c(friends actionButtonDeny)} {
+    color: cv('color.danger');
+    &:hover {
+      background: cv('color.danger');
+      color: var(--interactive-active);
+    }
+  }
+}
+
+// SEARCHBAR
+#{c(friends searchbar)} {
+  border-width: 2px;
+}
+
+// ADD FRIEND BUTTON
+#{c(header tabBar)} {
+  #{c(header addFriend)}#{c(header addFriend)}#{c(header addFriend)} {
+    // Yes this is how it is on discord as of 18/2
+    background-color: transparent;
+    color: cv('text.secondary');
+    border: none;
+    &:hover {
+      background-color: cv('shading.hover');
+    }
+  }
+}
+
+// ADD FRIEND SEARCHBAR
+#{c(friends addFriendInputWrapper)} {
+  border-bottom: 1px solid var(--neon-red-color);
+    border-radius: var(--radius-none);
+  &:focus-within {
+  border-bottom: 1px solid var(--neon-red-color);
+    border-radius: var(--radius-none);
+  }
+}
+#{c(friends addFriendInput)} {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+// ACTIVE NOW
+#{c(other cv promotedQuestActivity)} {
+  background-color: cv('shading.card');
+}
+#{c(friends nowPlayingColumn)} {
+  background: rgba(0, 0, 0, .6);
+}
+#{c(friends nowPlayingContainer)} {
+  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.2));
+}
+#{c(friends nowPlayingScroller)} {
+  border: none;
+}
+#{c(friends itemCardOuter)} {
+  &,
+  &:is(#{c(friends itemCardInteractive)}:hover, #{c(friends itemCardActive)}) {
+    background-color: cv('shading.card');
+    border: none;
+  }
+}
+#{c(friends itemCardBodySection)} {
+  border: none;
+  background-color: cv('shading.card');
+}
+
+// EMPTY ACTIVE NOW
+#{c(friends emptyCard)} {
+  background-color: cv('shading.card');
+}

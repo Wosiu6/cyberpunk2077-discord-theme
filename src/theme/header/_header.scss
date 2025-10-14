@@ -1,0 +1,53 @@
+@use 'backend' as *;
+
+/* HEADER */
+:is(#{c(main themeDark)}, #{c(main themeLight)}) {
+  #{c(header themed)} {
+    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.5));
+  }
+
+  #{c(header dot)} {
+    color: var(--normal-text);
+  }
+}
+
+#{c(header children)} {
+  &::after {
+    display: none;
+  }
+}
+
+#{c(header header)} {
+  border-bottom: 1px solid var(--neon-red-color) !important;
+}
+
+// NICKNAME
+#{c(header akaBadge)} {
+  background: cv('color.main');
+}
+
+// SEARCH
+#{c(header searchBar)} {
+  background-color: cv('shading.input.bg');
+  border-bottom: 1px solid var(--neon-red-color);
+  border-radius: var(--radius-none);
+
+  &:focus-within {
+    border-bottom: 1px solid var(--neon-red-color);
+  }
+}
+
+#{c(header searchFilter)},
+#{c(header searchAnswer)} {
+  background: cv('color.main');
+}
+
+#{c(header searchFilter)} {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#{c(header searchAnswer)} {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}

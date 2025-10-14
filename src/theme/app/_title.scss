@@ -1,0 +1,20 @@
+@use 'backend' as *;
+
+// TITLE
+#{c(title bar)} {
+  background-color: transparent;
+  padding-left: 0;
+}
+
+#{c(title trailing container)} path {
+  --interactive-normal: var(--smoke-color);
+}
+
+#{c(title leading container)} {
+  gap: 0;
+  margin: 0 6px;
+
+  &:hover {
+    color: var(--neon-blue-color);
+  }
+}

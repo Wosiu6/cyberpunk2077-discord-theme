@@ -1,0 +1,114 @@
+@use 'backend' as *;
+
+#{c(sidebar private channels)} {
+  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.2));
+}
+
+#{c(sidebar private channelContainer)} {}
+
+#{c(sidebar private scroller)} {
+  background: transparent;
+  margin-bottom: var(--custom-app-panels-height, 0);
+}
+
+// HEADER
+#{c(sidebar private headerContainer)} {
+
+  &,
+  &:not(#{c(sidebar private tall)}):hover {
+    color: cv('color.main');
+  }
+}
+
+#{c(sidebar private headerText)} {
+  display: flex;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  align-items: left;
+
+  &:hover {
+    color: var(--neon-blue-color);
+  }
+}
+
+#{c(sidebar private searchBar)} {
+  border-bottom: 1px solid var(--neon-red-color) !important;
+}
+
+#{c(sidebar private searchBar)} button {
+  border-bottom: 1px solid var(--neon-blue-color) !important;
+  background: var(--darker-primary-color) !important;
+  border-radius: var(--radius-md);
+}
+
+#{c(sidebar private startActivityIcon)},
+#{c(sidebar private inviteButtonIcon)} {
+  color: cv('color.main');
+
+  &:hover {
+    color: cv('color.hover');
+  }
+}
+
+// LOADING
+#{c(sidebar private loadingEmpty)} {
+  fill: cv('text.normal');
+  opacity: 0.15;
+}
+
+// CHANNEL CONTENT
+#{c(sidebar private interactive)} {
+  transition: all 0.15s ease-in-out;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 100%;
+    bottom: 0;
+    left: 0;
+    transition: all 0.15s ease-in-out;
+    z-index: -1;
+  }
+
+  // HOVER
+  &:hover {
+    background: cv('shading.hover');
+    box-shadow: inset 0px 0px 0px 1px var(--neon-yellow-color);
+    color: var(--neon-yellow-color);
+    border-radius: 0;
+    z-index: 1;
+    border-bottom-right-radius: 10px;
+  }
+
+  // SELECTED
+  &#{c(sidebar private selected)} {
+    background-color: transparent;
+    color: var(--interactive-active);
+
+    &::before {
+      right: 0;
+      animation: cv-channel-select 0.3s ease-in-out;
+
+      box-shadow: inset 0px 0px 0px 1px var(--neon-blue-color);
+      color: var(--neon-blue-color);
+      border-radius: 0;
+      border-bottom-right-radius: 10px;
+      z-index: 1;
+    }
+
+    #{c(sidebar private activityText)} {
+      color: var(--interactive-active);
+
+      strong {
+        color: var(--interactive-active);
+      }
+    }
+  }
+}
+
+// NAMES
+#{c(sidebar private name)} {
+  color: var(--text-primary);
+}
