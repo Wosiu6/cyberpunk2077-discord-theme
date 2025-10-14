@@ -63,7 +63,7 @@
       }
 
       #{c(sidebar server category addButtonIcon)} {
-        color: cv('color.hover');
+        color: var(--neon-blue-color);
       }
     }
   }
