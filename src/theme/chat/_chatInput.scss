@@ -2,7 +2,6 @@
 
 // CHAT INPUT
 #{c(chatForm channelTextAreaMainChat)} {
-  margin-top: 1.0625rem;
   border-radius: 0;
   border-bottom: 1px solid var(--neon-red-color);
 }
@@ -70,4 +69,9 @@
   &::before {
     border-top-color: cv('shading.popout');
   }
+}
+
+// Typing indicator
+#{c(chatForm typing)} {
+    margin-top: 1.0625rem;
 }
