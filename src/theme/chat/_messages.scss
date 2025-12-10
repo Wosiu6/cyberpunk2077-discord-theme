@@ -35,6 +35,11 @@
   color: var(--message-text-color);
 }
 
+#{c(hljs hljs)} {
+  background: cv('shading.card');
+  border: 1px solid var(--border-normal);
+}
+
 #{c(chat markup)} {
   code {
     background: cv('shading.card');
@@ -236,9 +241,14 @@
   background: cv('shading.popout');
 }
 
-#{c(embeds textContainer modalTextContainer)} {
+// TEXT CONTAINER MODAL 
+#{c(embeds textContainer modal textContainer)} {
   background: transparent;
   border: none;
+}
+
+#{c(embeds textContainer modal content)} #{c(embeds textContainer codeView)} {
+  background: transparent;
 }
 
 // HAS THREAD
@@ -312,6 +322,7 @@
 
 // AUTOMOD
 #{c(embeds automod card)},
+#{c(embeds automod card)}#{c(embeds automod selected)},
 #{c(embeds automod footerContainer)} {
   background: cv('shading.card');
 }
