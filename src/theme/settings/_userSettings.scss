@@ -1,7 +1,40 @@
 @use 'backend' as *;
 
 // SIDEBAR
-#{c(userSettings sidebar nitroBackgroundSelected)} {
+#{c(userSettings sidebar fixedContent)}::after {
+  display: none;
+}
+#{c(userSettings sidebar sectionLabel)} {
+  justify-content: center;
+  &::before {
+    content: '';
+    height: 2px;
+    flex-grow: 1;
+    background: linear-gradient(to left, cv('color.main') 50%, transparent);
+  }
+  &::after {
+    content: '';
+    height: 2px;
+    flex-grow: 1;
+    background: linear-gradient(to right, cv('color.main') 50%, transparent);
+  }
+}
+#{c(userSettings sidebar label)} {
+  color: cv('color.main') !important;
+  margin: 0 5px;
+}
+#{c(userSettings sidebar item)} {
+  &:hover {
+     background: cv('shading.hover');
+  }
+  &#{c(userSettings sidebar itemActive)} {
+    background: cv('color.main');
+  }
+}
+
+// CONTENT
+#{c(userSettings content)},
+#{c(userSettings contentHeader)} {
   background: transparent;
 }
 
@@ -28,12 +61,58 @@
     border: 2px solid cv('color.main');
   }
 }
+#{c(userSettings profiles lockIcon)} {
+  background: cv('color.main') !important;
+}
+
+// PROFILES - DISPLAY NAME STYLES
+#{c(userSettings profiles nameStyles content)}#{c(userSettings profiles nameStyles content)} {
+  background: transparent;
+}
+#{c(userSettings profiles nameStyles fontButton)}#{c(userSettings profiles nameStyles fontSelected)},
+#{c(userSettings profiles nameStyles effectButton)}#{c(userSettings profiles nameStyles effectSelected)} {
+  border: 1px solid cv('color.main');
+}
+
+// PROFILES - AVATAR DECO
+#{c(userSettings profiles decoration gridItem)} {
+  background: cv('shading.cardAlt');
+}
+#{c(userSettings profiles decoration gridItemSelected)} {
+  box-shadow: inset 0 0 0 2px cv('color.main');
+}
+#{c(userSettings profiles decoration preview)},
+#{c(userSettings profiles decoration previewSmall)} {
+  background: cv('shading.cardAlt');
+}
+#{c(userSettings profiles decoration previewUpsellBanner)} {
+  background: transparent;
+}
+
+// PROFILES - NAMEPLATE
+#{c(userSettings profiles nameplate inventoryControlsButton)} {
+  background: cv('shading.cardAlt');
+}
+#{c(userSettings profiles nameplate inventoryControlsSelected)} {
+  box-shadow: inset 0 0 0 2px cv('color.main');
+}
+
+// PROFILES - EFFECT
+#{c(userSettings profiles effect gridItem)} {
+  background: cv('shading.cardAlt');
+}
+#{c(userSettings profiles effect gridItemSelected)} {
+  box-shadow: inset 0 0 0 2px cv('color.main');
+}
 
 // CONTENT & SOCIAL
-#{c(userSettings content blockedCard)} {
+#{c(userSettings contentSocial blockedCard)} {
   background: cv('shading.card');
 }
-#{c(userSettings content blockedHeader)} {
+#{c(userSettings contentSocial blockedHeader)} {
+  background: transparent;
+}
+#{c(userSettings contentSocial games emptyContainer)} {
   background: transparent;
 }
 
@@ -59,6 +138,7 @@
   #{c(userSettings authedApps detailsSection)} {
     background: cv('shading.cardAlt');
     padding: 16px;
+    margin: 0;
     &:active {
       background: cv('shading.cardAlt');
     }
@@ -121,6 +201,10 @@
   }
 }
 // NITRO - WITH NITRO
+#{c(userSettings nitro shareNitroContainer)} {
+  background: cv('shading.card');
+  margin: 0;
+}
 #{c(userSettings nitro giftCard)} {
   background: cv('shading.card');
 }
@@ -226,7 +310,7 @@
   background: cv('shading.card');
 }
 #{c(userSettings games nowPlaying)} {
-  background: hsl(from ('color.success') h s l/.8) ;
+  background: hsl(from cv('color.success') h s l/.8) ;
 }
 #{c(userSettings games addGamePopout)} {
   background: cv('shading.popout');
