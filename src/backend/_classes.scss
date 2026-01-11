@@ -1859,6 +1859,7 @@ $classes: (
         'background': '_4577670752bdbe9c-modalBg',
         'body': '_4577670752bdbe9c-modalBody',
         'content': '_4577670752bdbe9c-modalContent',
+        'header': '_4577670752bdbe9c-modalHeader',
         'footer': '_4577670752bdbe9c-contentFooter',
       ),
     ),
@@ -2209,9 +2210,11 @@ $classes: (
     // loading
     'loadingCardSkeleton': 'e4f643832afbf3d3-productSkeletonCardContainer',
     'loadingCardSkeletonAnimation': 'e4f643832afbf3d3-pulseAnimation',
+    'loadingCardBody': 'e4f643832afbf3d3-productSkeletonBody',
     'loadingCardContent': 'e4f643832afbf3d3-productSkeletonContent',
     'loadingCardText': 'e4f643832afbf3d3-productSkeletonText',
     'loadingFeaturedSkeleton': '_084152b107f71237-featuredBlockSkeleton',
+    'loadingFeaturedBody': '_084152b107f71237-featuredBlockSkeletonBody',
     'loadingFeaturedLogo': '_084152b107f71237-featuredBlockSkeletonLogo',
 
     // cards
@@ -2735,6 +2738,7 @@ $classes: (
     'bottomButtonContainer': '_650eb104245d257b-tutorialContainer',
     'bottomButton': '_5bc7ed9d4097f6b5-circleIconButton',
     'bottomButtonSelected': '_5bc7ed9d4097f6b5-selected',
+    'bottomButtonDisabled': '_5bc7ed9d4097f6b5-disabled',
     'bottomButtonIcon': '_5bc7ed9d4097f6b5-circleIcon',
     'lowerBadge': 'cc5dd25190031396-lowerBadge',
     'upperBadge': 'cc5dd25190031396-upperBadge',
@@ -2938,6 +2942,7 @@ $classes: (
             'mentionsBar': '_7aaec78b97ff00f7-mentionsBar',
             // ping!
             'icon': '_7aaec78b97ff00f7-unreadIcon',
+            'unreadIcon': '_7aaec78b97ff00f7-unreadIcon',
             // arrow
             'text': '_7aaec78b97ff00f7-barText',
 
@@ -3149,6 +3154,7 @@ $classes: (
                 // appears to be related to stage audience stuff
                 'avatar': '_07f9193042954787-avatar',
                 'avatarSmall': '_07f9193042954787-avatarSmall',
+                'avatarSpeaking': '_07f9193042954787-avatarSpeaking',
 
                 'container': 'container__91e7c',
                 // contains usernameContainer + chipletParent
@@ -3830,6 +3836,7 @@ $classes: (
       'profileContainer': 'container_ba7f98',
 
       'lockIcon': '_0399167be87f87ca-iconBadge',
+      'uploadImageOption': '_0399167be87f87ca-uploadImageOption',
 
       'nameStyles': (
         'content': '_3981368466c83a53-modalContent',
@@ -3920,6 +3927,7 @@ $classes: (
 
     'connections': (
       'connectTopContainer': '_5a8382cf5c9d77df-container',
+      'connectContainer': '_5a8382cf5c9d77df-connectContainer',
       'connectionsContainer': 'c7f964e7e0fc8b47-connectionsContainer',
       'accountButtonInner': 'c7f964e7e0fc8b47-accountButtonInner',
       'accountWrapper': 'c7f964e7e0fc8b47-accountAddWrapper',
@@ -3947,6 +3955,7 @@ $classes: (
       'footerWrapper': '_70f7f6541f6f031e-wrapper',
       'footerWrapperBase': '_70f7f6541f6f031e-innerWrapperBase',
       'footerSubButton': '_70f7f6541f6f031e-subButton',
+      'footerGiftButton': '_70f7f6541f6f031e-giftButton',
 
       // with nitro
       'premiumtierCard': 'a45ed3bc8a11b547-tierCard',
@@ -4000,7 +4009,9 @@ $classes: (
       'subText': '_43963ae61224cded-subText',
       'paymentPane': '_01014d2e38bd7c76-paymentPane',
       'bottomDivider': '_01014d2e38bd7c76-bottomDivider',
+      'paginator': '_01014d2e38bd7c76-paginator',
       'payment': 'e9cb00d6250845ad-payment',
+      'hoverablePayment': 'e9cb00d6250845ad-hoverablePayment',
       'expandedInfo': 'e9cb00d6250845ad-expandedInfo',
       'codeRedemptionRedirect': 'a706ba33cbeb179a-codeRedemptionRedirect',
     ),
@@ -4344,6 +4355,7 @@ $classes: (
       'earningsPreviewContainer': '_02e4c53e15067b10-earningsPreviewContainer',
       'avatarCard': '_02e4c53e15067b10-avatarCard',
       'avatarConnector': '_02e4c53e15067b10-verticalConnector' '_02e4c53e15067b10-horizontalConnector',
+      'viewServerButton': '_02e4c53e15067b10-viewServerButton',
     ),
 
     'boost': (
@@ -4995,6 +5007,7 @@ $classes: (
       'messageCozy': 'e8b59c4b335dd2fc-messageGroupCozy',
       'actionButtons': 'e8b59c4b335dd2fc-actionButtons',
       'buttonContainer': 'e8b59c4b335dd2fc-buttonContainer',
+      'jumpButton': 'e8b59c4b335dd2fc-jumpButton',
 
       // no pins
       'emptyPlaceholder': 'e8b59c4b335dd2fc-emptyPlaceholder',
@@ -5015,6 +5028,8 @@ $classes: (
       'tabBar': 'ab66419eae73260f-tabBar',
       'tab': 'ab66419eae73260f-tab',
       'controls': 'ab66419eae73260f-controls',
+      'button': 'ab66419eae73260f-button',
+      'buttonDisabled': 'ab66419eae73260f-disabled',
       'channelHeader': '_35a7ecf3aba351b2-channelHeader',
       'guildIcon': '_35a7ecf3aba351b2-guildIcon',
       'dmIcon': '_35a7ecf3aba351b2-dmIcon',
@@ -5124,6 +5139,10 @@ $classes: (
       'footer': 'd2eed6166a4ad770-footer',
     ),
 
+    'guildTag': (
+      'spinner': 'd2eed6166a4ad770-spinner',
+    ),
+
     // Click either an Emoji or a Sticker within chat
     'emojiStickerPopout': (
       'container': '_0f481cbbd7530492-popoutContainer',
@@ -5142,6 +5161,7 @@ $classes: (
     'streamPreview': (
       'popout': '_6da2d8abf659f945-streamPreview',
       'previewContainer': '_6da2d8abf659f945-previewContainer',
+      'watchButton': '_6da2d8abf659f945-watchButton',
     ),
 
     'vcPreview': (
@@ -5237,6 +5257,7 @@ $classes: (
       'pillIconOnline': '_921c50dc4baa4b4f-pillIconOnline',
       'pillMessage': 'pillMessage_b83a05',
       'pillIconTotal': '_921c50dc4baa4b4f-pillIconTotal',
+      'editProfileContainer': '_921c50dc4baa4b4f-editProfileContainer',
     ),
 
     // "Time Out" on another user
@@ -5247,6 +5268,12 @@ $classes: (
       // there are many more classes in the group below
       'selectorButton': '_0907c3e69b3b62a9-selectorButton',
       'selectorButtonSelected': '_0907c3e69b3b62a9-selectorButtonSelected',
+    ),
+
+    // "Ban" on another user
+    'ban': (
+      'radioItem': '_0907c3e69b3b62a9-radioItem',
+      'otherReasonClickable': '_0907c3e69b3b62a9-otherReasonClickable',
     ),
 
     // Get an incoming call
