@@ -594,6 +594,7 @@ $classes: (
     'text': '_2b1f52e43a8f1c02-textBadge',
   ),
   'login': (
+    'wrapper': 'eb40697790f5b161-wrapper',
     'characterBackground': 'eb40697790f5b161-characterBackground',
     // seemingly a parent class for the whole thing
     'artwork': 'eb40697790f5b161-artwork',
@@ -610,8 +611,8 @@ $classes: (
     'header': '_1d5fc857269ab40d-header',
     'title': '_921c50dc4baa4b4f-title',
     'qrCodeOverlay': 'e16417fd9812ee39-qrCodeOverlay',
-    
     'accountsList': '_920b86c5b761e645-list',
+    'addAccountNav': '_920b86c5b761e645-navRow',
   ),
   'os': (
     'win': 'platform-win',
@@ -731,6 +732,8 @@ $classes: (
     'root': 'bfe55a0aaaf62375-root',
     'idle': 'bfe55a0aaaf62375-idle',
     // applied when screen sharing and not hovered, hides controls (and children of)
+    'gradientBackground': '_116642f293ef6ec6-gradientBackground',
+    'gradientSphere': '_116642f293ef6ec6-sphere',
     'pulseGradient': '_116642f293ef6ec6-pulseGradient',
     // seen in empty vc
     'voiceCallWrapper': 'a21736575ea33af0-voiceCallWrapper',
@@ -1210,6 +1213,8 @@ $classes: (
     'matchingPostsRow': 'f369dba7416c67f0-matchingPostsRow',
 
     'empty': '_93db49446403e33e-container',
+    'emptyIcon': '_93db49446403e33e-icon',
+    'emptyCTA': '_93db49446403e33e-cta',
 
     'example': (
       // empty forum see examples
@@ -1489,10 +1494,13 @@ $classes: (
         'bar': (
             'container': '_34c2c51cfce1632e-container',
             'header': '_34c2c51cfce1632e-header',
+            'button': '_34c2c51cfce1632e-button',
+            'buttonInner': '_34c2c51cfce1632e-buttonInner',
             'reactButtons': '_34c2c51cfce1632e-reactButtons',
             'addReactButton': '_34c2c51cfce1632e-addReactButton',
             'reactions': '_34c2c51cfce1632e-reactions',
             'buttons': '_34c2c51cfce1632e-buttons',
+            'active': '_34c2c51cfce1632e-active',
           ),
       ),
   ),
@@ -1518,6 +1526,8 @@ $classes: (
     'newTextAreaError': 'fb64c9a451c49797-channelTextAreaInnerError',
     'newThreadTextArea': 'fb64c9a451c49797-channelTextArea',
     'newThreadTextAreaInner': 'fb64c9a451c49797-channelTextAreaInner',
+    'activethreadsContainer': 'fb64c9a451c49797-container',
+    'activethreadsHeader': 'fb64c9a451c49797-header',
   ),
 
   'serverGuide': (
@@ -1555,6 +1565,9 @@ $classes: (
           'header': '_0b56311ebc6682e2-header',
           // has background, overwritten from different rule
           'innerHeader': '_0b56311ebc6682e2-innerHeader',
+          'returnButton': '_0b56311ebc6682e2-returnButton',
+          'returnButtonText': '_0b56311ebc6682e2-returnButtonText',
+          'returnIcon': '_0b56311ebc6682e2-returnIcon',
           // page container
           'tabBar': '_0b56311ebc6682e2-tabBar',
           'tabBarItem': '_0b56311ebc6682e2-tabBarItem',
@@ -1979,6 +1992,7 @@ $classes: (
       // download audio/video and edit image button
       'group': '_06ab41fd2ef7af3f-hoverButtonGroup',
       'button': '_06ab41fd2ef7af3f-hoverButton',
+      'selected': '_6c706db0523bd9a7-selected',
       'downloadIcon': '_6c706db0523bd9a7-downloadHoverButtonIcon',
     ),
 
@@ -1995,6 +2009,7 @@ $classes: (
       'question': '_0be773cf1443f34f-question',
       // child to header, also contains default color (header primary), font scaling, text md medium and default color (text normal; overwritten)
       'secondaryAction': '_0be773cf1443f34f-secondaryAction',
+      'secondaryButtonPresentation': '_0be773cf1443f34f-secondaryButtonPresentation',
       'tertiaryAction': '_0be773cf1443f34f-tertiaryAction',
 
       // answers seem to be in their own group for some reason
@@ -5331,6 +5346,7 @@ $classes: (
       'pillItemSelected': '_9e06aaa5aecd6e3e-pillItemSelected',
 
       'source': 'febe194135dcdd22-source',
+      'sourceSelected': 'febe194135dcdd22-selectedSource',
       'sourcePreviewContainer': 'febe194135dcdd22-sourcePreviewContainer',
       'sourcePreview': 'febe194135dcdd22-sourcePreview',
       'sourceOverlayCTA': 'febe194135dcdd22-sourceOverlayCTA',
@@ -5345,12 +5361,23 @@ $classes: (
       'optionContainer': '_949ab4d1e52789e8-optionContainer',
     ),
 
+     // On a message with reactions, right click and click "Show reactions" OBSOLETE
+    'reactions': (
+      'modal': 'container_cc2dff',
+      'sidebar': 'scroller_cc2dff',
+      'default': 'reactionDefault_cc2dff',
+      'selected': 'reactionSelected_cc2dff',
+      'reactors': 'reactors_cc2dff',
+    ),
+
     // Ctrl+K or Ctrl+T to open (CMD on Mac)
     'quickswitcher': (
+      'container': 'ac6cb02cd15b4b3b-container',
       'modal': 'ac6cb02cd15b4b3b-quickswitcher',
       'search': 'ac6cb02cd15b4b3b-input',
       'scroller': 'ac6cb02cd15b4b3b-scroller',      
       'result': '_71961da99d37ac57-result',
+      'ping': '_71961da99d37ac57-wrapper',
     ),
 
 
@@ -5717,6 +5744,8 @@ $classes: (
 
       'boost': (
         'content': 'a8c622117370c730-content',
+        'quantityIconWrapper': '_96f95c174d3b94a0-iconWrapper',
+        'quantityIcon': '_96f95c174d3b94a0-icon',
         'quantityValue': '_96f95c174d3b94a0-value',
         'upsellFooter': '_5e07c67f3bc3bdd9-upsellFooter',
       ),
