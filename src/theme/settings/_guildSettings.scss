@@ -32,7 +32,7 @@
 }
 #{c(guildSettings roles defaultPermsIcon)} {
   background: cv('color.main');
-  color: var(--interactive-text-active);
+  color: var(--interactive-active);
 }
 // ROLES - EDIT
 #{c(guildSettings roles edit backContainer)} {

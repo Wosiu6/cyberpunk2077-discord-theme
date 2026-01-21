@@ -72,6 +72,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --light-neon-red-color: #ff4c6d;
   --neon-purple-color: #bd00ff;
   --neon-blue-color: #55ead4;
+  --active-neon-blue-color: #07cfcf;
   --muted-neon-blue-color: #00b8ff;
   --smoke-color: whitesmoke;
   --muted-smoke-color: #d3d3d3;
@@ -98,11 +99,13 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --border-normal: var(--neon-red-color);
   --text-primary: var(--neon-blue-color);
   --text-muted: var(--muted-neon-blue-color);
+  --text-active: var(--active-neon-blue-color);
   --message-text-color: var(--smoke-color);
   --message-link-color: var(--neon-purple-color);
 
   --interactive-normal: var(--text-primary);
   --interactive-muted: var(--text-muted);
+  --interactive-active: var(--text-active);
   --divider-color: var(--neon-red-color);
 
   --main-font: "Rajdhani";
