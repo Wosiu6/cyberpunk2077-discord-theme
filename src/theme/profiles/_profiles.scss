@@ -103,6 +103,7 @@
 
 // NITRO PROFILE MODAL
 #{c(profile customTheme)} {
+  
   // TABS
   #{c(tab top)} {
     #{c(tab item)} {
@@ -112,14 +113,27 @@
       }
     }
   }
+
+  // BUTTONS
+  #{c(button new primary)} {
+    background-color: var(--control-background-primary-default);
+    border-color: var(--control-border-primary-default);
+  }
+  #{c(button new secondary)} {
+    background-color: var(--control-background-secondary-default);
+    border-color: var(--control-border-secondary-default);
+  }
+
   // SCROLLBAR
   ::-webkit-scrollbar-thumb {
     background-color: var(--profile-gradient-primary-color);
   }
+
   // NOTE
   #{c(profile modal noteTextarea)} {
     background: var(--user-profile-note-background-focus);
-    &:focus {
+    &:focus,
+    &:focus:hover {
       border-color: var(--profile-gradient-primary-color);
       background: var(--user-profile-note-background-focus);
     }
