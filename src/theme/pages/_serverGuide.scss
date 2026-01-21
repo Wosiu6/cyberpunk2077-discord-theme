@@ -9,9 +9,9 @@
 
 // CARDS
 #{c(serverGuide rowCard)} {
-  background: cv('shading.card');
-  border: cv('shading.card');
-}
+    background: cv('shading.card');
+    border: cv('shading.card');
+  }
 #{c(serverGuide guildIcon)} {
   background-color: cv('shading.card');
   border-color: transparent;

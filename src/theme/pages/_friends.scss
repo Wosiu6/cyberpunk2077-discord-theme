@@ -11,10 +11,6 @@
   background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
 }
 
-#{c(friends peopleListItemText)} {
-  color: var(--text-primary)
-}
-
 // Looking for accounts you’ve blocked or ignored?
 #{c(friends blockedIgnoredSettingsNotice)} {
   @include card;
@@ -80,9 +76,6 @@
 }
 
 // ACTIVE NOW
-#{c(other cv promotedQuestActivity)} {
-  background-color: cv('shading.card');
-}
 #{c(friends nowPlayingColumn)} {
   background: rgba(0, 0, 0, .6);
 }
