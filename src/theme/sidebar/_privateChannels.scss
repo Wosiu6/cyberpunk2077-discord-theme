@@ -47,6 +47,11 @@
   opacity: 0.15;
 }
 
+// LOADING
+#{c(sidebar private avatarWithText)} {
+  color: var(--neon-red-color);
+}
+
 // CHANNEL CONTENT
 #{c(sidebar private interactive)} {
   transition: all 0.15s ease-in-out;
