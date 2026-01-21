@@ -25,7 +25,6 @@
     color: var(--neon-blue-color);
   }
 }
-
 #{c(sidebar private searchBar)} {
   border-bottom: 1px solid var(--neon-red-color) !important;
 }
@@ -35,8 +34,6 @@
   background: var(--darker-primary-color) !important;
   border-radius: var(--radius-md);
 }
-
-#{c(sidebar private startActivityIcon)},
 #{c(sidebar private inviteButtonIcon)} {
   color: cv('color.main');
   &:hover {
@@ -97,9 +94,4 @@
       }
     }
   }
-}
-
-// NAMES
-#{c(sidebar private name)} {
-  color: var(--text-primary);
 }
