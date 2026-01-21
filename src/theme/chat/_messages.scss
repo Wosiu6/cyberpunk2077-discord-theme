@@ -31,10 +31,6 @@
 }
 
 // CODEBLOCK
-#{c(chat messageContent)} {
-  color: var(--message-text-color);
-}
-
 #{c(hljs hljs)} {
   background: cv('shading.card');
   border: 1px solid var(--border-normal);
@@ -126,6 +122,7 @@
 #{c(chat mentioned)} {
   --background-mentioned: hsl(from var(--hsl-main-color) h s l/.1);
   --background-mentioned-hover: hsl(from var(--hsl-hover-color) h s l/.1);
+  background: var(--background-mentioned);
 
   &:before {
     background-color: cv('color.main');
@@ -152,22 +149,14 @@
   border-bottom: none;
 }
 
-// EMBEDS
-#{c(embeds embedGrid)} {
+// BOT EMBED CONTAINER
+#{c(embeds embedBotContainer)} {
   background-color: var(--dark-primary-color);
 }
 
 // EMBED DOWNLOAD BUTTON
 #{c(embeds hoverButton group)} {
   background: cv('shading.popout');
-}
-
-#{c(embeds hoverButton button)} {
-
-  &#{c(embeds hoverButton selected)},
-  &:hover {
-    background: transparent;
-  }
 }
 
 // ATTACHMENTS
@@ -262,20 +251,6 @@
   }
 }
 
-#{c(chat messageDivider)} {
-  border: 0;
-}
-
-#{c(chat messageDivider)} span {
-
-  &::before,
-  &::after {
-    border-color: var(--divider-color);
-    border-top: 1px solid;
-    color: var(--divider-color);
-  }
-}
-
 #{c(embeds threadContainer)} {
   // compact view
   border-color: cv('color.main');
@@ -342,11 +317,6 @@
   #{c(embeds poll answerInner)}#{c(embeds poll currentlyVoting)}#{c(embeds poll selected)} {
     outline: 1px solid cv('color.main');
   }
-}
-
-#{c(embeds poll secondaryButtonPresentation)} {
-  background: cv('color.main');
-  border: transparent;
 }
 
 #{c(embeds poll checkbox)} {

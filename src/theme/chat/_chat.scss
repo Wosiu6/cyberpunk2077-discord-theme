@@ -67,7 +67,3 @@
 #{c(chat allowedRoleInner2)} {
   background: hsl(from var(--custom-role-label-color) h s l/.2);
 }
-
-#{c(chat message)} {
-  color: var(--message-text-color);
-}

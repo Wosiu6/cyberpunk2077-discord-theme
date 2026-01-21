@@ -1,7 +1,7 @@
 @use 'backend' as *;
 
 // CHAT INPUT
-#{c(chatForm channelTextAreaMainChat)} {
+#{c(chatForm form)} {
   border-radius: 0;
   margin-top: 1.0625rem;
   border-bottom: 1px solid var(--neon-red-color);

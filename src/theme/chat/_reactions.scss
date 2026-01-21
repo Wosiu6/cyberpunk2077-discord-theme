@@ -17,10 +17,6 @@
   }
 }
 
-#{c(chat reactions reaction)} {
-  border-radius: var(--radius-none);
-}
-
 // TOOLTIP
 #{c(chat reactions tooltip tooltip)} {
   background: cv('shading.popout');
