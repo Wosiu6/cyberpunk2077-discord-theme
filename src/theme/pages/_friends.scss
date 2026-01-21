@@ -32,6 +32,15 @@
       stroke: var(--interactive-active);
     }
   }
+  &:active {
+    background: cv('color.hover');
+    svg,
+    svg * {
+      color: var(--interactive-active);
+      fill: var(--interactive-active);
+      stroke: var(--interactive-active);
+    }
+  }
   &#{c(friends actionButtonAccept)} {
     color: cv('color.success');
     &:hover {
@@ -62,6 +71,10 @@
     border: none;
     &:hover {
       background-color: cv('shading.hover');
+    }
+    &[aria-selected='true'] {
+      background-color: cv('color.main');
+      color: cv('text.strong');
     }
   }
 }
