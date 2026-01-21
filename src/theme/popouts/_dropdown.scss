@@ -3,6 +3,7 @@
 #{c(popouts dropdown filled)} {
   &#{c(popouts dropdown select)} {
     box-shadow: none;
+
     &:hover {
       border: 1px solid var(--input-border);
     }
@@ -10,19 +11,24 @@
 }
 
 #{c(popouts dropdown popout)} {
+
   &,
   &#{c(popouts dropdown positionTop)} {
     background: cv('shading.popout');
     border: none;
   }
 }
+
 #{c(popouts dropdown option)} {
   margin: 0 8px;
+
   &:hover {
     background: cv('color.hover');
   }
+
   &[aria-selected='true'] {
     background: cv('color.main');
+
     &:not(#{c(popouts dropdown option)}#{c(popouts dropdown multi)}) {
       background: cv('color.main');
     }
@@ -46,10 +52,12 @@
     }
   }
 }
+
 #{c(popouts dropdown optionPillItem)} {
   #{c(popouts dropdown optionPillBtn)} {
     background: transparent;
     border: none;
+
     #{c(popouts dropdown optionPillBtn)} {
       background: cv('color.main');
     }
