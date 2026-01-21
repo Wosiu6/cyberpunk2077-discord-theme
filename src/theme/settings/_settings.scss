@@ -87,10 +87,7 @@
   }
 }
 
-// REMOVE BUTTON
-#{c(settings removeButton default)} {
-  &,
-  &:hover {
-    background-color: cv('shading.popout');
-  }
+// COLOUR PICKER
+#{c(settings colorPickerPopout)} {
+  background: cv('shading.popout');
 }
