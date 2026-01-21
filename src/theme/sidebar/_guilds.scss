@@ -18,6 +18,7 @@
 // PILL
 #{c(guildList pillItem)} {
   box-shadow: 0 0 3px 1px cv('color.main');
+  background: var(--neon-red-color);
 }
 #{c(guildList pillDiscover)} {
   bottom: 0;
