@@ -27,13 +27,29 @@
   color: cv('color.main');
   font-weight: 600;
   align-items: left;
-  --interactive-normal: whitesmoke;
+--interactive-normal: whitesmoke;
+
+  &:before {
+    content: '';
+    height: 2px;
+    flex-grow: 1;
+    background: linear-gradient(to left, currentColor 50%, transparent);
+    margin-right: 5px;
+  }
+
+  &:after {
+    content: '';
+    height: 2px;
+    flex-grow: 1;
+    background: linear-gradient(to right, currentColor 50%, transparent);
+    margin-left: 5px;
+  }
 }
 
 // RECENT ACTIVITY
 #{c(memberList activityContainer)} {
   background: cv('shading.card');
-  border-width: 2px;
+    border-width: 2px;
   padding-left: 10px;
 }
 
@@ -89,7 +105,7 @@
       top: 0;
       right: 0;
       bottom: 0;
-      left: 0;
+      left: -8px;
       background: linear-gradient(to right, cv('shading.hover') 90%, transparent);
       opacity: 0;
       transition: all 0.15s ease-in-out;
@@ -102,7 +118,7 @@
       top: 0;
       right: 100%;
       bottom: 0;
-      left: 0;
+      left: -8px;
       background: linear-gradient(to right, cv('color.main') 90%, transparent);
       opacity: 0.8;
       transition: all 0.3s ease-in-out;
@@ -138,7 +154,7 @@
 
   strong {
     color: cv('color.main');
-    font-weight: 600;
+    font-weight: 700;
     transition: all 0.15s ease-in-out;
   }
 }
@@ -186,14 +202,4 @@
   #{c(memberList ownerIcon)} {
     filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.7));
   }
-}
-
-// QUEST POPOUT
-#{c(memberList quest container)} {
-  background: cv('shading.popout');
-}
-
-#{c(memberList quest button)} {
-  background: cv('color.main');
-  border: none;
 }
