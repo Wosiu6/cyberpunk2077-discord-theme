@@ -17,6 +17,9 @@
   backdrop-filter: none;
   background: rgba(0, 0, 0, .6);
 }
+#{c(sidebar server container)} {
+  background: rgba(0, 0, 0, .6);
+}
 
 // HEADER - COMMUNITY/BANNER
 #{c(sidebar server header bannerContainer)} {
@@ -31,7 +34,6 @@
 // UNREAD PILL
 #{c(sidebar server channels unreadPill)} {
   box-shadow: 0 0 6px 1px cv('color.main');
-  background-color: var(--main-color);
 }
 
 // UNREAD BAR
@@ -40,9 +42,10 @@
   background-color: cv('color.main');
   border-color: cv('color.main');
 }
-
-#{c(sidebar server unreadBar unreadIcon)},
-#{c(sidebar server unreadBar text)} {
+#{c(sidebar server unreadBar text)},
+#{c(sidebar server unreadBar icon)},
+#{c(sidebar server unreadBar old text)},
+#{c(sidebar server unreadBar old icon)} {
   color: var(--interactive-active) !important; //inline style
 }
 
@@ -50,7 +53,6 @@
 #{c(sidebar server channels threadsSpineBorder)} {
   background-color: cv('color.main');
 }
-
 #{c(sidebar server channels threadsSpine)} {
   color: cv('color.main');
 }
@@ -59,7 +61,6 @@
 #{c(sidebar server channels link)} {
   transition: all 0.15s ease-in-out;
   margin-left: 4px;
-
   &::before {
     top: 0;
     right: 100%;
@@ -69,7 +70,6 @@
     z-index: -1;
   }
 }
-
 #{c(sidebar server channels icon)} {
   width: 18px;
   height: 18px;
@@ -77,18 +77,15 @@
   transition: all 0.15s ease-in-out;
   color: var(--message-text-color);
 }
-
 #{c(sidebar server channels name)} {
   transition: all 0.15s ease-in-out;
   color: var(--hsl-main-color-light);
 }
-
 #{c(sidebar server channels wrapper)} {
   background: rgba(0, 0, 0, .25);
 
   // MUTED
   &#{c(sidebar server channels muted)} {
-
     #{c(sidebar server channels name)},
     #{c(sidebar server channels icon)} {
       color: var(--hsl-channel-muted);
@@ -105,7 +102,6 @@
       border-radius: 0;
       border-bottom-right-radius: 10px;
     }
-
     #{c(sidebar server channels name)},
     #{c(sidebar server channels icon)} {
       color: var(--neon-yellow-color);
@@ -118,12 +114,10 @@
       color: var(--hsl-channel-unread);
       text-shadow: 0 0 3px;
     }
-
     #{c(sidebar server channels icon)} {
       color: var(--hsl-channel-unread);
       filter: drop-shadow(0 0 3px);
     }
-
     &:hover {
       :is(#{c(sidebar server channels name)}, #{c(sidebar server channels icon)}) {
         color: var(--neon-yellow-color);
@@ -143,10 +137,10 @@
       &::before {
         color: var(--neon-yellow-color);
         right: 0;
+        background: var(--hsl-channel-selected-bg);
         animation: cv-channel-select 0.3s ease-in-out;
       }
     }
-
     #{c(sidebar server channels name)},
     #{c(sidebar server channels icon)} {
       color: var(--neon-blue-color);
@@ -159,7 +153,6 @@
       color: cv('color.main');
       text-shadow: 0 0 3px;
     }
-
     #{c(sidebar server channels icon)} {
       color: cv('color.main');
       filter: drop-shadow(0 0 3px);
@@ -172,11 +165,9 @@
 #{c(sidebar server channels voiceLimitUsers)} {
   background: transparent;
 }
-
 #{c(sidebar server channels voiceLimitUsers)} {
   padding: 0 8px 0 6px;
 }
-
 #{c(sidebar server channels voiceLimitTotal)} {
   padding: 0 6px 0 1px;
 }
@@ -186,41 +177,13 @@
 #{c(sidebar server channels voice listGeneric)} {
   padding-left: 24px;
 }
-
-#{c(sidebar server channels voice user)} {
-  z-index: 1;
-
-  #{c(sidebar server channels voice userContent)} {
-    transition: all 0.15s ease-in-out;
-  }
-
-  #{c(sidebar server channels voice avatarSpeaking)} {
-    box-shadow: 0 0 0 2px cv('color.main'), inset 0 0 3px rgba(0, 0, 0, 0.5);
-    position: relative;
-    transition: all 0.1s ease-in-out;
-
-    &:after {
-      content: '';
-      top: -2px;
-      bottom: -2px;
-      width: 150px;
-      position: absolute;
-      height: 1.8em;
-      background: linear-gradient(to right, cv('color.main') 10%, transparent);
-      opacity: 0.5;
-      transition: all 0.1s ease-in-out, width 0.15s ease-in-out;
-      pointer-events: none;
-      z-index: -1;
-      border-radius: 999px 0 0 999px;
-    }
-  }
-
-  #{c(sidebar server channels voice username)} {
-    color: hsla(0, 0%, 100%, 0.5);
-    transition: all 0.1s ease-in-out;
-  }
-
-  #{c(sidebar server channels voice usernameSpeaking)} {
-    color: #fff;
-  }
+#{c(sidebar server channels voice avatar)}[style*='var(--status-speaking)']::before {
+  content: '';
+  width: 150px;
+  height: 24px;
+  position: absolute;
+  background: linear-gradient(to right, cv('color.main') 10%, transparent);
+  opacity: 0.5;
+  z-index: -1;
+  border-radius: 999px 0 0 999px;
 }

@@ -9,20 +9,15 @@
 }
 
 // GUILD LIST
-#{c(guildList guilds)} {
+#{c(guildList wrapper)} {
   margin-bottom: var(--custom-app-panels-height);
   background: transparent;
   padding-top: 10px;
 }
 
-#{c(guildList wrapper)} {
-  background: rgba(0, 0, 0, .5);
-}
-
 // PILL
 #{c(guildList pillItem)} {
   box-shadow: 0 0 3px 1px cv('color.main');
-  background-color: var(--main-color);
 }
 #{c(guildList pillDiscover)} {
   bottom: 0;
@@ -71,13 +66,11 @@
 // ADD GUILD/DISCOVER BUTTONS
 #{c(guildList bottomButton)} {
   background-color: cv('shading.card');
+  &:hover:not(#{c(guildList bottomButtonDisabled)}) {
+    background: cv('color.hover');
+  }
   &#{c(guildList bottomButtonSelected)} {
     background: cv('color.main');
-  }
-  &:hover {
-    &:not(#{c(guildList bottomButtonDisabled)}) {
-      background: cv('color.hover');
-    }
   }
 }
 

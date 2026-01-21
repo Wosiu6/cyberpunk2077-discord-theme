@@ -3,9 +3,6 @@
 #{c(sidebar private channels)} {
   background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.2));
 }
-
-#{c(sidebar private channelContainer)} {}
-
 #{c(sidebar private scroller)} {
   background: transparent;
   margin-bottom: var(--custom-app-panels-height, 0);
@@ -13,20 +10,17 @@
 
 // HEADER
 #{c(sidebar private headerContainer)} {
-
   &,
-  &:not(#{c(sidebar private tall)}):hover {
+  &:hover {
     color: cv('color.main');
   }
 }
-
 #{c(sidebar private headerText)} {
   display: flex;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 600;
   align-items: left;
-
   &:hover {
     color: var(--neon-blue-color);
   }
@@ -45,7 +39,6 @@
 #{c(sidebar private startActivityIcon)},
 #{c(sidebar private inviteButtonIcon)} {
   color: cv('color.main');
-
   &:hover {
     color: cv('color.hover');
   }
@@ -71,7 +64,6 @@
     transition: all 0.15s ease-in-out;
     z-index: -1;
   }
-
   // HOVER
   &:hover {
     background: cv('shading.hover');
@@ -81,7 +73,6 @@
     z-index: 1;
     border-bottom-right-radius: 10px;
   }
-
   // SELECTED
   &#{c(sidebar private selected)} {
     background-color: transparent;
