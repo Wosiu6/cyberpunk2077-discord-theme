@@ -137,7 +137,6 @@
       &::before {
         color: var(--neon-yellow-color);
         right: 0;
-        background: var(--hsl-channel-selected-bg);
         animation: cv-channel-select 0.3s ease-in-out;
       }
     }
