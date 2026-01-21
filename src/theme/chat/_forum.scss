@@ -8,13 +8,11 @@
 #{c(forums header)} {
   background: cv('shading.input.bg');
   border: 2px solid cv('shading.input.border');
-
   #{c(input input)} {
     background: none;
     box-shadow: none;
   }
 }
-
 #{c(forums headerWithMatchingPosts)} {
   border-bottom: none;
   border-color: cv('color.main');
@@ -36,7 +34,6 @@
   background: cv('shading.card');
   border: none;
 }
-
 #{c(forums guidelines descriptionContainer)},
 #{c(forums guidelines gradient)},
 #{c(forums guidelines showMoreLinkContainer)} {
@@ -48,7 +45,6 @@
   background: cv('shading.card');
   border-color: cv('color.main');
   transition: all 0.2s ease;
-
   &#{c(pages tags clickable)} {
     &:not(#{c(pages tags disabled)}) {
       &:hover {
@@ -57,7 +53,6 @@
       }
     }
   }
-
   &#{c(pages tags selected)} {
     background: cv('color.main');
     border-color: cv('color.main');
@@ -70,7 +65,6 @@
       }
     }
   }
-
   #{c(forums tags dropdownPopoutContainer)} {
     background: transparent;
     border: none;
@@ -88,23 +82,19 @@
   // might need theme-dark/light in the future
   background: cv('shading.card');
   border: 2px solid transparent;
-
   &:hover {
     background: cv('shading.card');
     border-color: cv('color.hover');
   }
-
   &:is(#{c(forums grid isOpen)}, #{c(forums list isOpen)}) {
     background: cv('shading.card');
     border-color: cv('color.main');
   }
 }
-
 #{c(forums grid contentPreview)} {
   background: cv('shading.card');
   border: none;
 }
-
 #{c(forums pinIcon)} {
   background: cv('color.main');
 }
@@ -113,44 +103,22 @@
 #{c(forums chat divider)} {
   background: transparent;
 }
-
 #{c(forums chat header iconWrapper)} {
   background: cv('color.main');
 }
-
 #{c(forums chat header icon)} {
-  color: var(--text-primary);
-
   path {
     fill: var(--text-primary);
   }
 }
-
 #{c(forums chat bar container)} {
   background: transparent;
   border: none;
 }
 
-#{c(forums chat bar active)} {
-  color: cv('color.main');
-}
-
 // EMPTY
 #{c(forums empty)} {
   background: transparent;
-}
-
-#{c(forums emptyIcon)} {
-  background: cv('color.main');
-  color: var(--header-primary);
-}
-
-#{c(forums emptyCTA)} {
-  color: cv('color.main');
-
-  &:hover {
-    color: cv('color.hover');
-  }
 }
 
 // CARD LOADING
