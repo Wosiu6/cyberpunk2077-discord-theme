@@ -147,7 +147,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
 // overides discord defaults
 :is(#{c(main themeLight)}, #{c(main themeDark)} #{c(main themeLight)}) {
   // THESE VARIABLES ARE TO BE EDITED BY THE END USER
-  --background-shading: rgba(252, 252, 252, 0.3);
+  --background-shading: rgba(252, 252, 252, 0.2);
   --card-shading: rgba(252, 252, 252, 0.3);
   --popout-shading: rgba(252, 252, 252, 0.7);
   --modal-shading: rgba(252, 252, 252, 0.5);
