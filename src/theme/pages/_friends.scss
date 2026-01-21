@@ -27,9 +27,9 @@
     background: cv('color.hover');
     svg,
     svg * {
-      color: var(--neon-red-color);
-      fill: var(--neon-red-color);
-      stroke: var(--neon-red-color);
+      color: var(--interactive-active);
+      fill: var(--interactive-active);
+      stroke: var(--interactive-active);
     }
   }
   &#{c(friends actionButtonAccept)} {
