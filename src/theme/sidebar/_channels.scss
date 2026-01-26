@@ -12,7 +12,6 @@
 
 // CHANNELS BACKGROUND
 #{c(sidebar list)} {
-  border-top-left-radius: 10px;
   border: none;
   backdrop-filter: none;
   background: rgba(0, 0, 0, .6);
@@ -34,6 +33,11 @@
 // UNREAD PILL
 #{c(sidebar server channels unreadPill)} {
   box-shadow: 0 0 6px 1px cv('color.main');
+}
+
+// UNREAD PILL IMPORTANT
+#{c(sidebar server channels unreadPillImportant)} {
+  background: cv('color.main');
 }
 
 // UNREAD BAR
@@ -184,5 +188,4 @@
   background: linear-gradient(to right, cv('color.main') 10%, transparent);
   opacity: 0.5;
   z-index: -1;
-  border-radius: 999px 0 0 999px;
 }

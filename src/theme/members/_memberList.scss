@@ -91,6 +91,7 @@
         &:before,
         &:after {
           background: linear-gradient(to right, currentColor, transparent);
+          border-radius: 0;
         }
       }
     }
