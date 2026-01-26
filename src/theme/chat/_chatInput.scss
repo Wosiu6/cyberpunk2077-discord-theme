@@ -76,3 +76,8 @@
 #{c(chatForm typing)} {
   margin-top: 0;
 }
+
+// main chat area
+#{c(chatForm channelTextAreaMainChat)} {
+  border-radius: 0;
+}
