@@ -110,6 +110,9 @@
   path {
     fill: var(--text-primary);
   }
+  &:hover {
+    fill: var(--interactive-active);
+  }
 }
 #{c(forums chat bar container)} {
   background: transparent;
