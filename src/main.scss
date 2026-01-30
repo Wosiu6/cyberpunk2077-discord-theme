@@ -134,6 +134,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --home-icon: url(https://wosiu6.github.io/cyberpunk2077-discord-theme/assets/discord.svg);
   --home-size: cover;
 
+  --header-primary: var(--text-primary);
 
   --channel-normal: var(--interactive-normal);
   --channel-muted: var(--interactive-muted);
